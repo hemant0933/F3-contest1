@@ -21,11 +21,11 @@ function App() {
     }
     if(num1 === '' && num2 !== ''){
       setResult()   // reseting the result state
-      setError('Please enter Num 1');
+      setError('Num 1 cannot be empty');
     }
     if(num2 === '' && num1 !== ''){
       setResult()    // reseting the result state
-      setError('Please enter Num 2')
+      setError('Num 2 cannot be empty')
     }
 
     if (!/^-?\d*\.?\d+$/.test(num1) || !/^-?\d*\.?\d+$/.test(num2)) {
